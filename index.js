@@ -1,17 +1,37 @@
 var fs = require("fs");
 var express = require("express");
+var _ = require('lodash');
+
 var app = express();
 var port = process.env.PORT || 80;
 var articlesDir = 'public/articles';
 
-function buildHtml(res) {
+function buildHtml(res, page) {
     var header = fs.readFileSync('./header.html');
     var body = fs.readFileSync('./body.html').toString();
+    var articlesList;
+    var article;
+    var articleName;
+    var isExist = false;
 
-    var articles = fs.readdirSync(articlesDir);
-    var articleName = articles[randomInteger(articles.length)];
+    articlesList = fs.readdirSync(articlesDir);
+    articleName = articlesList[randomInteger(articlesList.length)];
 
-    var article = fs.readFileSync(articlesDir + '/' + articleName);
+    if (page) {
+        _.forEach(
+            articlesList,
+            function (artName) {
+                if (artName == page) {
+                    isExist = true;
+                }
+            }
+        );
+        if (isExist) {
+            articleName = page;
+        }
+    }
+
+    article = fs.readFileSync(articlesDir + '/' + articleName);
     body = body.replace('{{article}}', article);
     res.send(
         '<!DOCTYPE html>' +
@@ -37,6 +57,10 @@ app.use(express.static(__dirname + '/public'));
 app.get('/', function (req,res){
     res.redirect('random');
     // buildHtml(res);
+});
+
+app.get('/:page', function (req,res){
+    buildHtml(res, req.params.page || false);
 });
 
 app.get('*', function (req,res){
