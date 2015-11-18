@@ -35,7 +35,8 @@ function randomInteger(max) {
 app.use(express.static(__dirname + '/public'));
 
 app.get('/', function (req,res){
-    buildHtml(res);
+    res.redirect('random');
+    // buildHtml(res);
 });
 
 app.get('*', function (req,res){
