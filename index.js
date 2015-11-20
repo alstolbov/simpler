@@ -2,18 +2,19 @@ var express = require("express");
 
 var buildHtml = require('./lib/buildHTML');
 var router = require('./routes');
-var options = require('./options');
+var Options = require('./options');
 
 var app = express();
-var port = process.env.PORT || options.port;
+var port = process.env.PORT || Options.port;
 
-app.use(express.static(__dirname + '/public'));
+app.use(express.static(__dirname + '/' + Options.publicPlace));
 
 app.use('/', router);
 app.get('*', function (req,res){
     buildHtml({
         res: res,
-        contentType: 'aphorisms'
+        contentType: Options.defaultContentDir,
+        split: true
     });
 });
 

@@ -7,31 +7,31 @@ var buildHtml = require('./lib/buildHTML');
 //     res.redirect('random');
 // });
 
-router.get('/', function (req,res){
+router.get('/', function (req, res){
     buildHtml({
         res: res,
         pageName: false,
-        contentType: 'aphorisms',
+        contentType: false,
         split: true
     });
 });
 
-router.get('/:page', function (req,res){
+router.get('/:category', function (req, res){
+    buildHtml({
+        res: res,
+        pageName: false,
+        contentType: req.params.category || false,
+        split: true
+    });
+});
+
+router.get('/:category/:page', function (req, res){
     buildHtml({
         res: res,
         pageName: req.params.page || false,
-        contentType: 'aphorisms',
-        split: true
+        contentType: req.params.category || false,
+        split: false
     });
 });
-
-// router.get('/aphor/:page', function (req,res){
-//     buildHtml({
-//         res: res,
-//         pageName: req.params.page || false,
-//         contentType: 'aphorisms',
-//         split: true
-//     });
-// });
 
 module.exports = router;
