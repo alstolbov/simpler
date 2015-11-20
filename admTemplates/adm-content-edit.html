@@ -1,0 +1,40 @@
+<p>
+    <a href="/_adm/editcontent?{{user}}&{{pass}}">Back</a>
+</p>
+<form method="POST" action="/_adm/editcontent/{{category}}/{{file}}?{{user}}&{{pass}}">
+    <b>{{msg}}</b>
+    <p>{{category}}<p>
+    <input type="text" name="fileName" value="{{file}}">
+    <textarea id="my-textarea" name="content">{{content}}</textarea>
+    <input type="submit" name="save" value="save">
+</form>
+<script type="text/javascript">
+    
+function enableTab(id) {
+    var el = document.getElementById(id);
+    el.onkeydown = function(e) {
+        if (e.keyCode === 9) { // tab was pressed
+
+            // get caret position/selection
+            var val = this.value,
+                start = this.selectionStart,
+                end = this.selectionEnd;
+
+            // set textarea value to: text before caret + tab + text after caret
+            this.value = val.substring(0, start) + '\t' + val.substring(end);
+
+            // put caret at right position again
+            this.selectionStart = this.selectionEnd = start + 1;
+
+            // prevent the focus lose
+            return false;
+
+        }
+    };
+}
+
+// Enable the tab character onkeypress (onkeydown) inside textarea...
+// ... for a textarea that has an `id="my-textarea"`
+enableTab('my-textarea');
+
+</script>
