@@ -1,9 +1,10 @@
-module.exports = {
-    publicPlace: 'public',
-    contentPlace: 'content',
-    defaultContentDir: 'aphorisms',
-    admin: {
-        name: "q",
-        pass: "w"
-    }
-};
+{
+    	"defaultContentDir": "aphorisms",
+    	"admin": {
+        	"name": "q",
+        	"pass": "w"
+    	},
+	"defaultHeadFile": "default/head.html",
+	"defaultBodyFile": "default/body.html",
+	"defaultFooterFile": "default/footer.html"
+}

@@ -10,8 +10,8 @@
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.14.1",
+    "decompress": "^3.0.0",
     "express": "^4.13.3",
-    "lodash": "^3.10.1",
-    "zip-zip-top": "^0.1.0"
+    "lodash": "^3.10.1"
   }
 }

@@ -4,7 +4,8 @@ module.exports = {
     // aphorisms: 'public/aphorisms',
     publicPlace: 'public',
     contentPlace: 'content',
-    defaultContentDir: 'aphorisms',
+    templatePlace: 'templates',
+    adminDir: '_adm',
     tags: {
         metaStart: '<!--meta',
         metaStop: 'meta-->',

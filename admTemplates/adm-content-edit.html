@@ -1,7 +1,7 @@
 <p>
-    <a href="/_adm/editcontent?{{user}}&{{pass}}">Back</a>
+    <a href="/{{dir}}/{{type}}?{{user}}&{{pass}}">Back</a>
 </p>
-<form method="POST" action="/_adm/editcontent/{{category}}/{{file}}?{{user}}&{{pass}}">
+<form method="POST" action="/{{dir}}/{{type}}{{category}}/{{file}}?{{user}}&{{pass}}">
     <b>{{msg}}</b>
     <p>{{category}}<p>
     <input type="text" name="fileName" value="{{file}}">
