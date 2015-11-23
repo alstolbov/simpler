@@ -32,8 +32,16 @@ router.get('/', function (req, res){
     });
 });
 
-router.get('/_adm/backups', admCheck, function (req, res){
+router.get('/' + siteOptions.adminDir + '/backups', admCheck, function (req, res){
     admBackups.createBackup(req, res);
+});
+
+router.get('/' + siteOptions.adminDir + '/restore', admCheck, function (req, res){
+    admBackups.unZipForm(req, res);
+});
+
+router.post('/' + siteOptions.adminDir + '/restore', admCheck, function (req, res){
+    admBackups.unZip(req, res);
 });
 
 router.get('/' + siteOptions.adminDir + '/backups/all', admCheck, function (req, res){
