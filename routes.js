@@ -59,6 +59,10 @@ router.get('/' + siteOptions.adminDir + '/:contentType', admCheck, function (req
         case 'templates':
             admEditor.contentList(req, res);
             break;
+        case '_public':
+            req.params.contentType = 'public';
+            admEditor.contentList(req, res);
+            break;
         default:
             res.redirect('/');
     }
@@ -92,6 +96,21 @@ router.post('/' + siteOptions.adminDir + '/templates/:category/:file', admCheck,
 
 router.get('/' + siteOptions.adminDir + '/templates/:category', admCheck, function (req, res){
     req.params.contentType = 'templates';
+    admEditor.addCategory(req, res);
+});
+
+router.get('/' + siteOptions.adminDir + '/_public/:category/:file', admCheck, function (req, res){
+    req.params.contentType = 'public';
+    admEditor.editFile(req, res);
+});
+
+router.post('/' + siteOptions.adminDir + '/_public/:category/:file', admCheck, function (req, res){
+    req.params.contentType = 'public';
+    admEditor.saveFile(req, res);
+});
+
+router.get('/' + siteOptions.adminDir + '/_public/:category', admCheck, function (req, res){
+    req.params.contentType = 'public';
     admEditor.addCategory(req, res);
 });
 
