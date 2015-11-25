@@ -50,8 +50,20 @@ function enableTab(id) {
     };
 }
 
-// Enable the tab character onkeypress (onkeydown) inside textarea...
-// ... for a textarea that has an `id="my-textarea"`
+function onBlur (id) {
+    var el = document.getElementById(id);
+    // el.style.opacity = '0.6';
+    el.focus();
+    el.onblur = function() {
+        el.style.opacity = '0.6';
+    }
+    el.onfocus = function() {
+        el.style.opacity = '1';
+    }
+}
+
 enableTab('my-textarea');
+
+onBlur('my-textarea');
 
 </script>
