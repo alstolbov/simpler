@@ -1,12 +1,29 @@
-<p>
-    <a href="/{{dir}}/{{type}}?{{user}}&{{pass}}">Back</a>
-</p>
 <form method="POST" action="/{{dir}}/{{type}}{{category}}/{{file}}?{{user}}&{{pass}}">
-    <b>{{msg}}</b>
-    <p>{{category}}<p>
-    <input type="text" name="fileName" value="{{file}}">
-    <textarea id="my-textarea" name="content">{{content}}</textarea>
-    <input type="submit" name="save" value="save">
+    <div class="mainTextField">
+        <div>
+            <textarea id="my-textarea" name="content">{{content}}</textarea>
+        </div>
+    </div>
+    <div class="functField">
+        <div>
+            <div>
+                <a href="/{{dir}}/{{type}}?{{user}}&{{pass}}">Back</a>
+            </div>
+            <div>{{msg}}</div>
+            <div>
+                <input type="submit" name="save" value="save">
+            </div>
+            <div>
+                <span style="word-wrap: break-word;">
+                    {{category}}
+                </span>
+                <span> / </span>
+                <span>
+                    <input type="text" name="fileName" value="{{file}}">
+                </span>
+            </div>
+        </div>
+    </div>
 </form>
 <script type="text/javascript">
     
