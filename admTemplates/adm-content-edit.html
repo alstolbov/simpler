@@ -1,8 +1,10 @@
 <form method="POST" action="/{{dir}}/{{type}}{{category}}/{{file}}?{{user}}&{{pass}}">
-    <div class="mainTextField">
-        <div>
-            <textarea id="my-textarea" name="content">{{content}}</textarea>
-        </div>
+    <div class="mainTextField" id="my-textarea-wr" >
+        <!--<div class="firstContainer">-->
+            <!--<div class="secContainer">-->
+                <textarea id="my-textarea" name="content">{{content}}</textarea>
+            <!--</div>-->
+        <!--</div>-->
     </div>
     <div class="functField">
         <div>
@@ -50,20 +52,21 @@ function enableTab(id) {
     };
 }
 
-function onBlur (id) {
+function onBlur (id, src) {
     var el = document.getElementById(id);
+    var srcEl = document.getElementById(src);
     // el.style.opacity = '0.6';
     el.focus();
     el.onblur = function() {
-        el.style.opacity = '0.6';
+        srcEl.style.opacity = '0.6';
     }
     el.onfocus = function() {
-        el.style.opacity = '1';
+        srcEl.style.opacity = '1';
     }
 }
 
 enableTab('my-textarea');
 
-onBlur('my-textarea');
+onBlur('my-textarea', 'my-textarea-wr');
 
 </script>
