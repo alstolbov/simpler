@@ -1,8 +1,8 @@
 {
 	"defaultContentDir": "home",
 	"admin": {
-		"name": "q",
-		"pass": "w"
+		"name": "a",
+		"pass": "s"
 	},
 	"defaultHeadFile": "default/head.html",
 	"defaultBodyFile": "default/body.html",
