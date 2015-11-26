@@ -5,7 +5,7 @@ module.exports = {
     publicPlace: 'public',
     contentPlace: 'content',
     templatePlace: 'templates',
-    adminDir: '_adm',
+    adminDir: '_admino',
     tags: {
         metaStart: '<!--meta',
         metaStop: 'meta-->',

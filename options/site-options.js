@@ -2,7 +2,7 @@
 	"defaultContentDir": "home",
 	"admin": {
 		"name": "q",
-		"pass": "w"
+		"pass": "ww"
 	},
 	"defaultHeadFile": "default/head.html",
 	"defaultBodyFile": "default/body.html",

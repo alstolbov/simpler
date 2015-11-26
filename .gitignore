@@ -3,4 +3,4 @@ npm-debug.log
 build/
 .idea/
 options/site-options.js
-options.js
+/options.js
