@@ -39,11 +39,7 @@ app.get('/favicon.ico', function (req, res) {
 app.use('/', router);
 
 app.get('*', function (req,res){
-    buildHtml({
-        res: res,
-        contentType: Options.defaultContentDir,
-        split: true
-    });
+    buildHtml(req, res);
 });
 
 app.listen(port);
