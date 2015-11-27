@@ -1,10 +1,10 @@
 {
 	"defaultContentDir": "home",
 	"admin": {
-		"name": "7694f4a66316e53c8cdd9d9954bd611d",
-		"pass": "f1290186a5d0b1ceab27f4e77c0c5d68"
+		"name": "d43bf1add56efbc09b42349ba2b67e49",
+		"pass": "54e21f5dc8a23aa3d057b9475d1166d8"
 	},
-  "adminDir": "16ca4dd7d66bf5be2173c9f917a38c0c",
+  "adminDir": "71710e11bb4e409301934dc56d203fe3",
 	"defaultHeadFile": "default/head.html",
 	"defaultBodyFile": "default/body.html",
 	"defaultFooterFile": "default/footer.html"

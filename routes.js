@@ -137,6 +137,10 @@ router.post('/:adminDir/:action', function (req, res){
     admSession(req, res);
 });
 
+router.post('/:adminDir/:contentType/:saveFile', function (req, res){
+    admSession(req, res);
+});
+
 router.post('/:adminDir/:contentType/:category/:saveFile', function (req, res){
     admSession(req, res);
 });
