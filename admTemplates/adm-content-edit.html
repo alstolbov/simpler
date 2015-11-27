@@ -1,5 +1,5 @@
 <link rel="stylesheet" href="http://jaysalvat.github.io/vegas/releases/latest/vegas.min.css">
-<form method="POST" action="/{{dir}}/{{type}}{{category}}/{{file}}?{{user}}&{{pass}}">
+<form method="POST" action="/{{dir}}/{{type}}{{category}}/{{file}}">
     <div class="mainTextField" id="my-textarea-wr" >
         <!--<div class="firstContainer">-->
             <!--<div class="secContainer">-->
@@ -10,7 +10,8 @@
     <div class="functField">
         <div>
             <div>
-                <a href="/{{dir}}/{{type}}?{{user}}&{{pass}}">Back</a>
+                <a href="/{{dir}}/logout">Exit</a>
+                <a href="/{{dir}}/{{type}}">Back</a>
             </div>
             <div>{{msg}}</div>
             <div>
@@ -31,63 +32,63 @@
 <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
 <script src="http://jaysalvat.github.io/vegas/releases/latest/vegas.min.js"></script>
 <script type="text/javascript">
-$("body").vegas({
-    timer: false,
-    delay: 10000,
-    slides: [
-        { src: "/img/nature-autumn-forest.jpg" },
-        { src: "/img/1322480202_crumpled-paper-textures-06.jpg" },
-        { src: "/img/609.jpg" },
-        { src: "/img/24.jpg" }
-    ]
-});    
-function enableTab(id) {
-    var el = document.getElementById(id);
-    el.onkeydown = function(e) {
-        if (e.keyCode === 9) { // tab was pressed
+    // $("body").vegas({
+    //     timer: false,
+    //     delay: 10000,
+    //     slides: [
+    //         { src: "/img/nature-autumn-forest.jpg" },
+    //         { src: "/img/1322480202_crumpled-paper-textures-06.jpg" },
+    //         { src: "/img/609.jpg" },
+    //         { src: "/img/24.jpg" }
+    //     ]
+    // });    
+    function enableTab(id) {
+        var el = document.getElementById(id);
+        el.onkeydown = function(e) {
+            if (e.keyCode === 9) { // tab was pressed
 
-            // get caret position/selection
-            var val = this.value,
-                start = this.selectionStart,
-                end = this.selectionEnd;
+                // get caret position/selection
+                var val = this.value,
+                    start = this.selectionStart,
+                    end = this.selectionEnd;
 
-            // set textarea value to: text before caret + tab + text after caret
-            this.value = val.substring(0, start) + '\t' + val.substring(end);
+                // set textarea value to: text before caret + tab + text after caret
+                this.value = val.substring(0, start) + '\t' + val.substring(end);
 
-            // put caret at right position again
-            this.selectionStart = this.selectionEnd = start + 1;
+                // put caret at right position again
+                this.selectionStart = this.selectionEnd = start + 1;
 
-            // prevent the focus lose
-            return false;
+                // prevent the focus lose
+                return false;
 
+            }
+        };
+    }
+
+    function onBlur (id, src) {
+        var el = document.getElementById(id);
+        var srcEl = document.getElementById(src);
+        // el.style.opacity = '0.6';
+        el.focus();
+        el.onblur = function() {
+            srcEl.style.opacity = '0.6';
         }
-    };
-}
-
-function onBlur (id, src) {
-    var el = document.getElementById(id);
-    var srcEl = document.getElementById(src);
-    // el.style.opacity = '0.6';
-    el.focus();
-    el.onblur = function() {
-        srcEl.style.opacity = '0.6';
+        el.onfocus = function() {
+            srcEl.style.opacity = '1';
+        }
     }
-    el.onfocus = function() {
-        srcEl.style.opacity = '1';
+
+    function undoRedo (id) {
+        var el = document.getElementById(id);
+        var evnt = document.createEvent('TextEvent');
+        evnt.initTextEvent('textInput', true, true, null, el.value);
+        el.dispatchEvent(event);
     }
-}
 
-function undoRedo (id) {
-    var el = document.getElementById(id);
-    var evnt = document.createEvent('TextEvent');
-    evnt.initTextEvent('textInput', true, true, null, el.value);
-    el.dispatchEvent(event);
-}
+    enableTab('my-textarea');
 
-enableTab('my-textarea');
+    onBlur('my-textarea', 'my-textarea-wr');
 
-onBlur('my-textarea', 'my-textarea-wr');
-
-//undoRedo('my-textarea');
+    //undoRedo('my-textarea');
 
 </script>
