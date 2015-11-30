@@ -28,6 +28,13 @@
             </div>
         </div>
     </div>
+    <div class="settingField">
+        <div>
+            <div>
+                {{themeslist}}
+            </div>
+        </div>
+    </div>
 </form>
 <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
 <script src="http://jaysalvat.github.io/vegas/releases/latest/vegas.min.js"></script>
@@ -91,4 +98,14 @@
 
     //undoRedo('my-textarea');
 
+</script>
+<script type="text/javascript">
+    function selectTheme (id) {
+        var el = document.getElementById(id);
+        el.onchange = function () {
+            document.body.id = el[el.selectedIndex].value
+        }
+    }
+
+    selectTheme('themes');
 </script>
