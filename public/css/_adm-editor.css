@@ -70,6 +70,9 @@ input[type=submit]:active {
 /*	background-image: url('/img/24.jpg');
 */	background-attachment: local;
 	transition: all 300ms ease 0s;
+  -moz-tab-size : 4;
+  -o-tab-size : 4;
+  tab-size : 4;
 }
 
 .functField {
