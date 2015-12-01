@@ -104,13 +104,13 @@ input[type=submit]:active {
 	margin-bottom: 10px;
 }
 
-#default {
+#autumn {
 	background-image: url('https://leto46f.storage.yandex.net/rdisk/9c2a73ff7edf59add813f31ba4d56af73c7fe204dad80f0aea7dd7de2a4c6656/inf/9SdW8fdZ8fa8_Qs_jg67wNDeNxiYM-sxYWxSeu-rV0E8crl-zbpUpWSKjT4z3B0M_99-G0RzCxQd38EERtzoRg==?uid=0&filename=nature-autumn-forest.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&tknv=v2&rtoken=08dc432e7806d1a087c218a3ffd5136b&force_default=no&ycrid=na-80f0e6a3a62d1206b28ffe4bd64529ce-downloader2d');
 }
-#default .mainTextField{
+#autumn .mainTextField{
 	background-image: url('https://zima120e.storage.yandex.net/rdisk/23e1669547722ec572ea1ba22d2e6dc9ec8fdfe2bf46dd68c88e8fcfbc15575c/inf/3dbztk0iWbGxjqmb7GzpFXbl-O4mztEXejjD7k7-JkdhcNXgsE61yr-1eD2UlaykDJ4p8lzyuAlall51q3UTQw==?uid=322026610&filename=24.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&tknv=v2&rtoken=08dc432e7806d1a087c218a3ffd5136b&force_default=yes&ycrid=na-a9ef74f9ed744092603a6f275ef3cbbc-downloader6d');
 }
-#default .mainTextField textarea{
+#autumn .mainTextField textarea{
 	background-image: url('https://zima120e.storage.yandex.net/rdisk/23e1669547722ec572ea1ba22d2e6dc9ec8fdfe2bf46dd68c88e8fcfbc15575c/inf/3dbztk0iWbGxjqmb7GzpFXbl-O4mztEXejjD7k7-JkdhcNXgsE61yr-1eD2UlaykDJ4p8lzyuAlall51q3UTQw==?uid=322026610&filename=24.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&tknv=v2&rtoken=08dc432e7806d1a087c218a3ffd5136b&force_default=yes&ycrid=na-a9ef74f9ed744092603a6f275ef3cbbc-downloader6d');
 }
 
@@ -122,4 +122,14 @@ input[type=submit]:active {
 }
 #mountain .mainTextField textarea{
 	background-image: url('https://zima39g.storage.yandex.net/rdisk/b3c8249743a2cdd01d0f82149e4f7118a08f40beddcb96d36c0c9c012ee38d97/inf/R-A9Ms7zIoNCwNzwXHE3JmPm0QyXL6FUHv9tOtouuh7z-3kAsikY19-ot6Hob8wP8DEpy0hxbLfPkLTH-B95ng==?uid=322026610&filename=609.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&tknv=v2&rtoken=08dc432e7806d1a087c218a3ffd5136b&force_default=yes&ycrid=na-7497c384ecb524131020954450833de3-downloader6d');
+}
+
+#gray {
+	background-color: rgba(221, 221, 221, 1);
+}
+#gray .mainTextField{
+	background-color: rgba(221, 221, 221, 1);
+}
+#gray .mainTextField textarea{
+	background-color: rgba(221, 221, 221, 1);
 }
