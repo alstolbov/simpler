@@ -7,6 +7,7 @@ body {
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+	background-repeat: no-repeat;
 	transition: all 300ms ease 0s;
 }
 body, input, textarea {
@@ -104,13 +105,13 @@ input[type=submit]:active {
 	margin-bottom: 10px;
 }
 
-#default {
+#autumn {
 	background-image: url('https://leto46f.storage.yandex.net/rdisk/9c2a73ff7edf59add813f31ba4d56af73c7fe204dad80f0aea7dd7de2a4c6656/inf/9SdW8fdZ8fa8_Qs_jg67wNDeNxiYM-sxYWxSeu-rV0E8crl-zbpUpWSKjT4z3B0M_99-G0RzCxQd38EERtzoRg==?uid=0&filename=nature-autumn-forest.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&tknv=v2&rtoken=08dc432e7806d1a087c218a3ffd5136b&force_default=no&ycrid=na-80f0e6a3a62d1206b28ffe4bd64529ce-downloader2d');
 }
-#default .mainTextField{
+#autumn .mainTextField{
 	background-image: url('https://zima120e.storage.yandex.net/rdisk/23e1669547722ec572ea1ba22d2e6dc9ec8fdfe2bf46dd68c88e8fcfbc15575c/inf/3dbztk0iWbGxjqmb7GzpFXbl-O4mztEXejjD7k7-JkdhcNXgsE61yr-1eD2UlaykDJ4p8lzyuAlall51q3UTQw==?uid=322026610&filename=24.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&tknv=v2&rtoken=08dc432e7806d1a087c218a3ffd5136b&force_default=yes&ycrid=na-a9ef74f9ed744092603a6f275ef3cbbc-downloader6d');
 }
-#default .mainTextField textarea{
+#autumn .mainTextField textarea{
 	background-image: url('https://zima120e.storage.yandex.net/rdisk/23e1669547722ec572ea1ba22d2e6dc9ec8fdfe2bf46dd68c88e8fcfbc15575c/inf/3dbztk0iWbGxjqmb7GzpFXbl-O4mztEXejjD7k7-JkdhcNXgsE61yr-1eD2UlaykDJ4p8lzyuAlall51q3UTQw==?uid=322026610&filename=24.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&tknv=v2&rtoken=08dc432e7806d1a087c218a3ffd5136b&force_default=yes&ycrid=na-a9ef74f9ed744092603a6f275ef3cbbc-downloader6d');
 }
 
@@ -122,4 +123,64 @@ input[type=submit]:active {
 }
 #mountain .mainTextField textarea{
 	background-image: url('https://zima39g.storage.yandex.net/rdisk/b3c8249743a2cdd01d0f82149e4f7118a08f40beddcb96d36c0c9c012ee38d97/inf/R-A9Ms7zIoNCwNzwXHE3JmPm0QyXL6FUHv9tOtouuh7z-3kAsikY19-ot6Hob8wP8DEpy0hxbLfPkLTH-B95ng==?uid=322026610&filename=609.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&tknv=v2&rtoken=08dc432e7806d1a087c218a3ffd5136b&force_default=yes&ycrid=na-7497c384ecb524131020954450833de3-downloader6d');
+}
+
+#tibet {
+	background-image: url('https://leto5g.storage.yandex.net/rdisk/36e29aa308c0c542b98a1a2e5803639de7848c8a3d5f349bea0f4e14f95f57dc/inf/lRy1eD33H9-77_S3qfXQiFtDiybLatvy5AcLZxpGYik9y5JVk2OUOmYuH-jXI9EQfZkTFb6gTNFxME22L-OS4g==?uid=322026610&filename=World_Monastery_in_the_mountains_of_Tibet_093517_.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&tknv=v2&rtoken=06543fe003cfcb93d9a486b81a1f50eb&force_default=yes&ycrid=na-7ae9534811ca85a9be71c9fcb4c915b0-downloader5e');
+}
+#tibet .mainTextField{
+	background-image: url('https://zima39g.storage.yandex.net/rdisk/b3c8249743a2cdd01d0f82149e4f7118a08f40beddcb96d36c0c9c012ee38d97/inf/R-A9Ms7zIoNCwNzwXHE3JmPm0QyXL6FUHv9tOtouuh7z-3kAsikY19-ot6Hob8wP8DEpy0hxbLfPkLTH-B95ng==?uid=322026610&filename=609.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&tknv=v2&rtoken=08dc432e7806d1a087c218a3ffd5136b&force_default=yes&ycrid=na-7497c384ecb524131020954450833de3-downloader6d');
+}
+#tibet .mainTextField textarea{
+	background-image: url('https://zima39g.storage.yandex.net/rdisk/b3c8249743a2cdd01d0f82149e4f7118a08f40beddcb96d36c0c9c012ee38d97/inf/R-A9Ms7zIoNCwNzwXHE3JmPm0QyXL6FUHv9tOtouuh7z-3kAsikY19-ot6Hob8wP8DEpy0hxbLfPkLTH-B95ng==?uid=322026610&filename=609.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&tknv=v2&rtoken=08dc432e7806d1a087c218a3ffd5136b&force_default=yes&ycrid=na-7497c384ecb524131020954450833de3-downloader6d');
+}
+
+/*#mandala {
+	background-image: url('https://leto16e.storage.yandex.net/rdisk/4d35ff4c85a8fdedffd912315857c35ce6f90f2f277a7f560bb02965607de7c1/inf/kbQQketdAowM0biIrPHJpI-FI9nBrRCmFKjrEoLOTxDl9v4wnslQTbaJ80pJ_o61D4Mk0_f4sOtkvmP9U2oKLA==?uid=322026610&filename=mandala.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&tknv=v2&rtoken=06543fe003cfcb93d9a486b81a1f50eb&force_default=yes&ycrid=na-2ee5574eb3b6735208e24b3582d6897a-downloader5e');
+}
+#mandala .mainTextField{
+	background-image: url('https://zima120e.storage.yandex.net/rdisk/23e1669547722ec572ea1ba22d2e6dc9ec8fdfe2bf46dd68c88e8fcfbc15575c/inf/3dbztk0iWbGxjqmb7GzpFXbl-O4mztEXejjD7k7-JkdhcNXgsE61yr-1eD2UlaykDJ4p8lzyuAlall51q3UTQw==?uid=322026610&filename=24.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&tknv=v2&rtoken=08dc432e7806d1a087c218a3ffd5136b&force_default=yes&ycrid=na-a9ef74f9ed744092603a6f275ef3cbbc-downloader6d');
+}
+#mandala .mainTextField textarea{
+	background-image: url('https://zima120e.storage.yandex.net/rdisk/23e1669547722ec572ea1ba22d2e6dc9ec8fdfe2bf46dd68c88e8fcfbc15575c/inf/3dbztk0iWbGxjqmb7GzpFXbl-O4mztEXejjD7k7-JkdhcNXgsE61yr-1eD2UlaykDJ4p8lzyuAlall51q3UTQw==?uid=322026610&filename=24.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&tknv=v2&rtoken=08dc432e7806d1a087c218a3ffd5136b&force_default=yes&ycrid=na-a9ef74f9ed744092603a6f275ef3cbbc-downloader6d');
+}
+*/
+#mountainIsland {
+	background-image: url('https://zima289h.storage.yandex.net/rdisk/ae28b52539e8986ff1897eb30e5d94d8c05d1c9c602f31ae29cdf13e9ba26515/inf/iSUfC1ES_H8s0884pIewoTryVzD4BYqHx6bS1jcS2wsWKdzCLB-Hpom00YnvWSnqBCXVNCdMYk_0axepbDkH5g==?uid=322026610&filename=url.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&tknv=v2&rtoken=06543fe003cfcb93d9a486b81a1f50eb&force_default=yes&ycrid=na-f0002abe86b0a8f427bdf2a4b6ede268-downloader5e');
+}
+#mountainIsland .mainTextField{
+	background-image: url('https://zima120e.storage.yandex.net/rdisk/23e1669547722ec572ea1ba22d2e6dc9ec8fdfe2bf46dd68c88e8fcfbc15575c/inf/3dbztk0iWbGxjqmb7GzpFXbl-O4mztEXejjD7k7-JkdhcNXgsE61yr-1eD2UlaykDJ4p8lzyuAlall51q3UTQw==?uid=322026610&filename=24.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&tknv=v2&rtoken=08dc432e7806d1a087c218a3ffd5136b&force_default=yes&ycrid=na-a9ef74f9ed744092603a6f275ef3cbbc-downloader6d');
+}
+#mountainIsland .mainTextField textarea{
+	background-image: url('https://zima120e.storage.yandex.net/rdisk/23e1669547722ec572ea1ba22d2e6dc9ec8fdfe2bf46dd68c88e8fcfbc15575c/inf/3dbztk0iWbGxjqmb7GzpFXbl-O4mztEXejjD7k7-JkdhcNXgsE61yr-1eD2UlaykDJ4p8lzyuAlall51q3UTQw==?uid=322026610&filename=24.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&tknv=v2&rtoken=08dc432e7806d1a087c218a3ffd5136b&force_default=yes&ycrid=na-a9ef74f9ed744092603a6f275ef3cbbc-downloader6d');
+}
+
+#autumn2 {
+	background-image: url('https://zima118d.storage.yandex.net/rdisk/ef378cc27cc9bb47eff72a74104d1dcd35024678e2c89d859d23a152cfd97eaa/inf/AnTml8jiX8kj5EelZ0OeAqv6h_qtfnL5Jku8hCtXuGIbLlQVFgS9n4v1RKKZZzLkTd-iiklvAbBudBwLcqN8Wg==?uid=322026610&filename=url2.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&tknv=v2&rtoken=06543fe003cfcb93d9a486b81a1f50eb&force_default=yes&ycrid=na-23491cf3893adf0aa0b61ed7806788b0-downloader5e');
+}
+#autumn2 .mainTextField{
+	background-image: url('https://zima120e.storage.yandex.net/rdisk/23e1669547722ec572ea1ba22d2e6dc9ec8fdfe2bf46dd68c88e8fcfbc15575c/inf/3dbztk0iWbGxjqmb7GzpFXbl-O4mztEXejjD7k7-JkdhcNXgsE61yr-1eD2UlaykDJ4p8lzyuAlall51q3UTQw==?uid=322026610&filename=24.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&tknv=v2&rtoken=08dc432e7806d1a087c218a3ffd5136b&force_default=yes&ycrid=na-a9ef74f9ed744092603a6f275ef3cbbc-downloader6d');
+}
+#autumn2 .mainTextField textarea{
+	background-image: url('https://zima120e.storage.yandex.net/rdisk/23e1669547722ec572ea1ba22d2e6dc9ec8fdfe2bf46dd68c88e8fcfbc15575c/inf/3dbztk0iWbGxjqmb7GzpFXbl-O4mztEXejjD7k7-JkdhcNXgsE61yr-1eD2UlaykDJ4p8lzyuAlall51q3UTQw==?uid=322026610&filename=24.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&tknv=v2&rtoken=08dc432e7806d1a087c218a3ffd5136b&force_default=yes&ycrid=na-a9ef74f9ed744092603a6f275ef3cbbc-downloader6d');
+}
+
+#winter {
+	background-image: url('https://downloader-default10g.disk.yandex.net/rdisk/b1250978b02d2a3e83aa11b9f96bc6171ffa1116bb810f037a5f62413b901768/inf/D-iq9lQjX_Zr993IEYjzkmycE3C0fjH29HfwRtDDKVyWBJtVQkKaAY6WQLsBCfaX_5jVH_I_j0M2ihrTxEBGRg==?uid=322026610&filename=%D0%97%D0%B8%D0%BC%D0%B0.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&tknv=v2&rtoken=06543fe003cfcb93d9a486b81a1f50eb&force_default=yes&ycrid=na-b8cbd489b95d87a0e204b0032e8b27d9-downloader5e');
+}
+#winter .mainTextField{
+	background-image: url('https://zima39g.storage.yandex.net/rdisk/b3c8249743a2cdd01d0f82149e4f7118a08f40beddcb96d36c0c9c012ee38d97/inf/R-A9Ms7zIoNCwNzwXHE3JmPm0QyXL6FUHv9tOtouuh7z-3kAsikY19-ot6Hob8wP8DEpy0hxbLfPkLTH-B95ng==?uid=322026610&filename=609.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&tknv=v2&rtoken=08dc432e7806d1a087c218a3ffd5136b&force_default=yes&ycrid=na-7497c384ecb524131020954450833de3-downloader6d');
+}
+#winter .mainTextField textarea{
+	background-image: url('https://zima39g.storage.yandex.net/rdisk/b3c8249743a2cdd01d0f82149e4f7118a08f40beddcb96d36c0c9c012ee38d97/inf/R-A9Ms7zIoNCwNzwXHE3JmPm0QyXL6FUHv9tOtouuh7z-3kAsikY19-ot6Hob8wP8DEpy0hxbLfPkLTH-B95ng==?uid=322026610&filename=609.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&tknv=v2&rtoken=08dc432e7806d1a087c218a3ffd5136b&force_default=yes&ycrid=na-7497c384ecb524131020954450833de3-downloader6d');
+}
+
+#someTheme {
+	background-image: url('');
+}
+#someTheme .mainTextField{
+	background-image: url('');
+}
+#someTheme .mainTextField textarea{
+	background-image: url('');
 }
