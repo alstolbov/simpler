@@ -6,18 +6,25 @@ body {
 	margin: 0;
 	padding: 0;
   background-color: #f2f2f2;
+  font-size: 1.1em;
+  color: #333333;
+}
+
+body, .mainContentWr pre {
   /*font-family: "Courier New", Courier, monospace;
   font-family: 'Roboto', sans-serif;*/
   font-family: 'Open Sans', sans-serif;
-  font-size: 1.1em;
-  color: #333333;
+  /*font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Serif', serif;*/
 }
 
 .mainContentWr pre {
   /*font-family: "Courier New", Courier, monospace;*/
   /*font-family: 'Roboto', sans-serif;
   font-size: 1.1em;*/
-  font: normal 300 16px Roboto,Arial,sans-serif;
+  /*font: normal 300 16px Roboto,Arial,sans-serif;
+  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Serif', serif;*/
   white-space: pre-line;
 	text-align: justify;
 }
