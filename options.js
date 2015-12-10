@@ -9,6 +9,10 @@ module.exports = {
     tags: {
         metaStart: '<!--meta',
         metaStop: 'meta-->',
-        sectSplit: '<!--#-->'
+        sectSplit: '<!--#-->',
+        fileStart: '[[',
+        fileEnd: ']]',
+        varStart: '{{',
+        varEnd: '}}'
     }
 };
