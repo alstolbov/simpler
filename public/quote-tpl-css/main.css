@@ -11,30 +11,20 @@ body {
 }
 
 body, .mainContentWr pre {
-  /*font-family: "Courier New", Courier, monospace;
-  font-family: 'Roboto', sans-serif;*/
   font-family: 'Open Sans', sans-serif;
-  /*font-family: 'PT Sans', sans-serif;
-  font-family: 'PT Serif', serif;*/
-}
-
-.mainContentWr pre {
-  /*font-family: "Courier New", Courier, monospace;*/
-  /*font-family: 'Roboto', sans-serif;
-  font-size: 1.1em;*/
-  /*font: normal 300 16px Roboto,Arial,sans-serif;
-  font-family: 'PT Sans', sans-serif;
-  font-family: 'PT Serif', serif;*/
-  white-space: pre-line;
-	text-align: justify;
 }
 
 .mainContentWr {
   text-align: center;
   height: 100%;
 }
+
+.mainContentWr pre {
+  white-space: pre-line;
+	text-align: justify;
+}
  
-.mainContentWr:before {
+.mainContentWr.center:before {
   content: '';
   display: inline-block;
   height: 100%; 
@@ -43,6 +33,21 @@ body, .mainContentWr pre {
     
   /*background: #808080; width: 5px;*/
 }
+
+.mainContentWr.topLeft {
+  text-align: left;
+}
+
+.mainContentWr.topRight {
+  text-align: right;
+}
+
+.mainContentWr.bottomRight .centeredWr{
+  position: absolute;
+  display: block;
+  right: 0px;
+  bottom: 0px;
+}
  
 .centeredWr {
   display: inline-block;
@@ -50,7 +55,7 @@ body, .mainContentWr pre {
   width: 50%;
   padding: 10px 15px;
   /*border: #a0a0a0 solid 1px;*/
-  background: #f2f2f2;
+  background: transparent;
  }  
 .pageTitle {
   font-weight: 400;
@@ -59,22 +64,40 @@ body, .mainContentWr pre {
 .pagePostTitle {
   text-align: right;
   /*font-style: italic;*/
-  font-weight: 400;
+  font-weight: 300;
 }
-.pageLink {
+.pageLink, .footerPageLink {
   position: absolute;
   left: 10px;
+  width: 100%;
+  text-align: left;
+}
+.pageLink a,
+.pageLink a:hover,
+.footerPageLink a,
+.footerPageLink a:hover {
+  font-weight: 700;
+  font-size: 0.7em;
+  color: #999;
 }
 .footerPageLink {
-  position: absolute;
-  left: 10px;
-	  bottom: 4px;
+	bottom: 4px;
+}
+
+.mainContentWr.noSplit .pageTitle {
+  font-weight: 400;
+  font-size: 1.2rm
+}
+
+.mainContentWr.split pre {
+  font-size: 1.7em;
 }
 
 .buttonsWr {
   position: absolute;
   left: 10px;
-  bottom: 115px;
+  bottom: 35px;
+  text-align: left;
 }
 .buttonsWr a,
 .buttonsWr a:hover,
@@ -83,46 +106,14 @@ body, .mainContentWr pre {
   text-decoration: none;
 }
 
-.ViewPointWr {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    width: 60px;
-    height: 60px;
+.svg-container {
+  display: inline-block;
+  margin-bottom: 25px;
 }
-.outerCircle {
-    position: absolute;
-    width: 60px;
-    height: 60px;
-    background-color: #f2f2f2;
-    border-radius: 30px;
-    background-image: url('/img/rust_painted.png');
-    background-position: 20px;
+.svg-container a {
+  transition: 300ms;
+  opacity: 0.7;
 }
-.outerMaskCircle {
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    margin: 10px;
-    background-color: #f2f2f2;
-    border-radius: 20px;
-}
-.innerCircle {
-    position: absolute;
-    width: 14px;
-    height: 14px;
-    margin: 23px;
-    background-color: #f2f2f2;
-    border-radius: 7px;
-    background-image: url('/img/rust_painted.png');
-    background-position: 20px;
-}
-.ViewPointWr:hover {
-    cursor: pointer;
-}
-.ViewPointWr:hover .outerCircle{
-    background-color: #ddd;
-}
-.ViewPointWr:hover .innerCircle {
-    background-color: #ddd;
+.svg-container a:hover {
+  opacity: 0.9;
 }

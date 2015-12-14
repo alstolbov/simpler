@@ -1,4 +1,5 @@
-<div class="mainContentWr">
+<div id="noiseContainer"></div>
+<div class="mainContentWr noSplit">
   	<div class="centeredWr">
     		<div class="pageTitle">
 			{{content_title}}
@@ -8,15 +9,8 @@
 		</pre>
     	<div class="pageLink">
 			{{link}}
-			<div class="buttonsWr">
-				<a href="/articles">
-				    <div class="ViewPointWr">
-				        <div class="outerCircle"></div>
-				        <div class="outerMaskCircle"></div>
-				        <div class="innerCircle"></div>
-				    </div>
-				</a>
-			</div>
+			[[patterns/buttons.html]]
 		</div>
   	</div>
 </div>
+<script type="text/javascript" src="/js/noiseGen.js"></script>
