@@ -5,6 +5,7 @@ var buildHtml = require('./lib/buildHTML');
 var admBackups = require('./lib/_adm-backups-list');
 var admEditor = require('./lib/_adm-editor');
 var admSession = require('./lib/_adm_session');
+var Api = require('./lib/api');
 
 var siteOptions = require('./options');
 
@@ -14,6 +15,15 @@ var siteOptions = require('./options');
 
 router.get('/', function (req, res){
     buildHtml(req, res);
+});
+
+router.get('/_api/:category', function (req, res){
+    Api.getCategoryMeny(
+        req.params.category,
+        function (err, data) {
+            res.json(data || err);
+        }
+    );
 });
 
 router.get('/:category', function (req, res){
