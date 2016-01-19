@@ -18,7 +18,7 @@ router.get('/', function (req, res){
 });
 
 router.get('/_api/:category', function (req, res){
-    Api.getCategoryMeny(
+    Api.getCategoryMenu(
         req.params.category,
         function (err, data) {
             res.json(data || err);
