@@ -123,32 +123,33 @@ function getRootDir () {
 getData(
   '/_api/' + getRootDir(),
   function (err, res) {
-    console.log(res);
     var list = [];
 
     res.data.forEach(
       function (item) {
-        list.push(
-          createElement(
-            'li',
-            {
-              style: {
-                'list-style': 'none'
-              }
-            },
+        if (item.filename !== 'index.html') {
+          list.push(
             createElement(
-              'a',
+              'li',
               {
-                href: '/' + res.dir + '/' + item.filename,
                 style: {
-                  'text-decoration': 'underline',
-                  color: '#5f5f5f'
+                  'list-style': 'none'
                 }
               },
-              item.contentTitle
+              createElement(
+                'a',
+                {
+                  href: '/' + res.dir + '/' + item.filename,
+                  style: {
+                    'text-decoration': 'underline',
+                    color: '#5f5f5f'
+                  }
+                },
+                item.contentTitle
+              )
             )
           )
-        )
+        }
       }
     );
 
