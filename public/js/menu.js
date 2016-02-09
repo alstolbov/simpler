@@ -111,7 +111,7 @@ function getRootDir () {
   var splt = location.pathname.split('/');
   var lastPart = splt[splt.length - 1].split('.');
 
-  if (lastPart[lastPart.length - 1] == 'html') {
+  if (lastPart[lastPart.length - 1] == 'html' || lastPart[lastPart.length - 1] == '') {
     res = splt[splt.length - 2];
   } else {
     res = splt[splt.length - 1];

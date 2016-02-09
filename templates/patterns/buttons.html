@@ -1,23 +1,25 @@
 <div class="buttonsWr">
     <div class="svg-container">
-        <a href="#">
+        <a href="/">
             <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" class="svgIcon pict_poinOfView">
                 <defs>
-		            <pattern id="image" x="0" y="0" patternUnits="userSpaceOnUse" height="450" width="600" patternTransform="translate(20,70)">
-		                <image x="0" y="0" xlink:href="/img/rust_painted.png" height="450" width="600"></image>
-		            </pattern>                   
+                    <!--
+                    <pattern id="image" x="0" y="0" patternUnits="userSpaceOnUse" height="450" width="600" patternTransform="translate(20,70)">
+                        <image x="0" y="0" xlink:href="/img/rust_painted.png" height="450" width="600"></image>
+                    </pattern>
+                    -->               
                     <mask id="hole">
                         <rect width="100%" height="100%" fill="white"/>
                         <circle r="15" cx="25" cy="25" />
                     </mask>                    
                 </defs>
-                <circle cx="25" cy="25" r="25" fill="url(#image)" stroke="none" mask="url(#hole)" id="sss"/>
-                <circle cx="25" cy="25" r="6" fill="url(#image)" stroke="none"/>
+                <circle cx="25" cy="25" r="25" fill="#c1c1c1" stroke="none" mask="url(#hole)" id="sss"/>
+                <circle cx="25" cy="25" r="6" fill="#c1c1c1" stroke="none"/>
             </svg>
         </a>
     </div>
     <div class="svg-container">
-    	<a href="#">
+      <a href="/lit">
             <svg height="50" width="120" class="svgIcon pict_infinity">
                 <defs>
                     <mask id="holeInf">
@@ -31,8 +33,8 @@
                             C116,-35 116,85 65,25z"
                         />
                     </mask>
-                </defs>    
-
+                </defs> 
+                <!--   
                 <path 
                     fill="url(#image)"
                     stroke="none"
@@ -42,6 +44,21 @@
                 />
                 <path 
                     fill="url(#image)"
+                    stroke="none"
+                    mask="url(#holeInf)"
+                    d="M50,25
+                    C135,-50 135,100 50,25z"
+                />
+                -->
+                <path 
+                    fill="#c1c1c1"
+                    stroke="none"
+                    mask="url(#holeInf)"
+                    d="M70,25
+                    C-15,-50 -15,100 70,25z"
+                />
+                <path 
+                    fill="#c1c1c1"
                     stroke="none"
                     mask="url(#holeInf)"
                     d="M50,25

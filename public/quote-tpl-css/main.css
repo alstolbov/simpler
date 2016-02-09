@@ -5,7 +5,8 @@ html, body, .anima, .animaWr  {
     padding: 0;
 }
 body {
-  background-color: #f2f2f2;
+  /*background-color: #f2f2f2;*/
+  /*background-color: #000;*/
   font-size: 1.1em;
   color: #333333;
 }
@@ -51,7 +52,7 @@ body, .mainContentWr pre {
 .mainContentWr.split .centeredWr {
   display: inline-block;
   vertical-align: middle;
-  padding: 0 25px 25px;
+  padding: 25px;
   background: rgba(255, 255, 255, 0.7);
   border-radius: 10px;
 }
@@ -93,13 +94,57 @@ body, .mainContentWr pre {
  	overflow: hidden;
 }
 .anima {
-  background-image: url('/img/nature-autumn-forest.jpg');
+  background-image: url('https://zima65f.storage.yandex.net/rdisk/bd3f773d705e777822db54d1c6ab7cd22b0b9b8356229f650dbad139228dc7e5/inf/9SdW8fdZ8fa8_Qs_jg67wNDeNxiYM-sxYWxSeu-rV0E8crl-zbpUpWSKjT4z3B0M_99-G0RzCxQd38EERtzoRg==?uid=322026610&filename=nature-autumn-forest.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&tknv=v2&rtoken=be454f7c2f04b1e2588fcedd309a584d&force_default=yes&ycrid=na-dd4c566f91c1dfb57ce676c62ec58604-downloader7d');
   background-size: cover;
   background-repeat: no-repeat;
   /*animation: bodyAnim 15s forwards linear;
   transition: all 7000ms;
   transform: scale(2);
   background-position:-150px -150px;*/
+	/*animation: grayScale 10s forwards linear;*/
+	-webkit-backface-visibility: hidden;
+	-webkit-animation: imageAnimation 36s linear forwards;
+    -moz-animation: imageAnimation 36s linear forwards;
+    -o-animation: imageAnimation 36s linear forwards;
+    -ms-animation: imageAnimation336s linea  forwards;
+    animation: imageAnimation 36s linear forwards;
+}
+
+@keyframes imageAnimation { 
+	0% {
+	    opacity: 0;
+      transform: scale(1);
+      -webkit-filter: grayscale(100%);
+      filter: grayscale(100%);
+	    animation-timing-function: ease-in;
+	}
+	18% {
+	    opacity: 1;
+	    /*transform: scale(1.05);*/
+	    animation-timing-function: ease-out;
+	}
+	57% {
+	    opacity: 1;
+	    transform: scale(1.1);
+      -webkit-filter: grayscale(0%);
+      filter: grayscale(0%);
+	}
+	100% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+
+}
+
+@keyframes grayScale {
+	0% {
+		-webkit-filter: grayscale(100%);
+		filter: grayscale(100%);
+	}
+	100% {
+		-webkit-filter: grayscale(0%);
+		filter: grayscale(0%);
+	}
 }
 
 @keyframes bodyAnim {
@@ -112,19 +157,26 @@ body, .mainContentWr pre {
     background-position: 0px 0px;
     }
 }
-
+.mainContentWr.noSplit {
+	/*height: auto;*/
+	background-color: #fff;
+	color: #5f5f5f;
+}
 .mainContentWr.noSplit .centeredWr {
   min-height: 100%;
 }
 .mainContentWr.noSplit .pageTitle {
-  margin: 50px 0;
+  margin: 0;
+  padding: 70px 0;
   font-weight: 400;
-  font-size: 1.2em;
+  font-size: 1.4em;
 }
 
 .mainContentWr.noSplit pre {
   font-size: 1.0em;
   padding-bottom: 150px;
+  font-weight: 400;
+  color: #5f5f5f;
 }
 
 .mainContentWr.noSplit .postContentWr {
@@ -134,7 +186,8 @@ body, .mainContentWr pre {
 .pageLink a {
   font-weight: 700;
   font-size: 0.7em;
-  color: #999;
+  color: #333;
+  background-color: rgba(255, 255, 255, 0.5);
 
 }
 
@@ -144,7 +197,7 @@ body, .mainContentWr pre {
 }
 .svg-container a {
   transition: 300ms;
-  opacity: 0.7;
+  opacity: 0.4;
 }
 .svg-container a:hover {
   opacity: 0.9;
